@@ -1,0 +1,35 @@
+->  Create Project
+composer create-project laravel/laravel example-app
+
+
+->  Controller Creating
+php artisan make:controller <controller-name>
+
+-> composer install
+-> composer update
+
+->  Model Create
+php artisan make:model User -m
+
+
+
+->  Database Migrations
+php artisan migrate
+php artisan migrate:fresh
+
+
+
+->  This will create 1) Model 2) controller with default resource function 3) Migration file
+
+php artisan make:model --migration --controller test
+
+Short version: php artisan make:model -mc test
+
+
+->  Middleware Creating
+php artisan make:middleware <middleware-name>
+
+
+
+->  Forcing Seeders to Run in Production
+php artisan db:seed --force
